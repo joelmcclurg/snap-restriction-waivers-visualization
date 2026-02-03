@@ -9,8 +9,8 @@
       "duration_years": 2,
       "status": "implemented",
       "restrictions": ["soda", "soft_drinks", "energy_drinks"],
-      "restriction_text": "Soda, soft drinks, energy drinks",
-      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "restriction_text": "Restricts purchase of soda, 'soft drinks,' and energy drinks.",
+      "state_url": "https://www.fns.usda.gov/snap/waivers/foodrestriction/nebraska",
       "notes": "First state approved"
     },
     {
@@ -22,8 +22,8 @@
       "duration_years": 2,
       "status": "implemented",
       "restrictions": ["soft_drinks", "candy"],
-      "restriction_text": "Soft drinks, candy",
-      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "restriction_text": "Restricts purchase of soft drinks and candy.",
+      "state_url": "https://www.fns.usda.gov/snap/waivers/foodrestriction/indiana",
       "notes": ""
     },
     {
@@ -35,8 +35,8 @@
       "duration_years": 2,
       "status": "approved",
       "restrictions": ["soda", "candy", "unhealthy_drinks"],
-      "restriction_text": "Soda, low/no-cal soda, fruit/veg drinks <50% juice, unhealthy drinks, candy",
-      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "restriction_text": "Restricts purchase of soda, fruit and vegetable drinks with less than 50% natural juice, unhealthy drinks, and candy.",
+      "state_url": "https://www.fns.usda.gov/snap/waivers/foodrestriction/arkansas",
       "notes": "Comprehensive definition approach"
     },
     {
@@ -48,8 +48,8 @@
       "duration_years": 2,
       "status": "implemented",
       "restrictions": ["soda", "candy"],
-      "restriction_text": "Soda, candy",
-      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "restriction_text": "Restricts purchase of soda and candy.",
+      "state_url": "https://www.fns.usda.gov/snap/waivers/foodrestriction/idaho",
       "notes": ""
     },
     {
@@ -61,8 +61,8 @@
       "duration_years": 2,
       "status": "implemented",
       "restrictions": ["soft_drinks"],
-      "restriction_text": "Soft drinks",
-      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "restriction_text": "Restricts purchase of soft drinks.",
+      "state_url": "https://www.fns.usda.gov/snap/waivers/foodrestriction/utah",
       "notes": ""
     },
     {
@@ -74,8 +74,8 @@
       "duration_years": 2,
       "status": "implemented",
       "restrictions": ["soft_drinks"],
-      "restriction_text": "Soft drinks",
-      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "restriction_text": "Restricts purchase of soft drinks.",
+      "state_url": "https://www.fns.usda.gov/snap/waivers/foodrestriction/colorado",
       "notes": ""
     },
     {
@@ -87,8 +87,8 @@
       "duration_years": 2,
       "status": "implemented",
       "restrictions": ["soda", "energy_drinks", "candy", "prepared_desserts"],
-      "restriction_text": "Soda, energy drinks, candy, prepared desserts",
-      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "restriction_text": "Restricts purchase of soda, energy drinks, candy, and prepared desserts.",
+      "state_url": "https://www.fns.usda.gov/snap/waivers/foodrestriction/florida",
       "notes": ""
     },
     {
@@ -100,8 +100,8 @@
       "duration_years": 2,
       "status": "implemented",
       "restrictions": ["soft_drinks", "candy"],
-      "restriction_text": "Soft drinks, candy",
-      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "restriction_text": "Restricts purchase of soft drinks and candy.",
+      "state_url": "https://www.fns.usda.gov/snap/waivers/foodrestriction/oklahoma",
       "notes": ""
     },
     {
@@ -113,8 +113,8 @@
       "duration_years": 2,
       "status": "implemented",
       "restrictions": ["soda"],
-      "restriction_text": "Soda",
-      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "restriction_text": "Restricts purchase of soda.",
+      "state_url": "https://www.fns.usda.gov/snap/waivers/foodrestriction/west-virginia",
       "notes": ""
     },
     {
@@ -126,8 +126,8 @@
       "duration_years": 2,
       "status": "approved",
       "restrictions": ["sweetened_drinks", "candy"],
-      "restriction_text": "Sweetened drinks, candy",
-      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "restriction_text": "Restricts purchase of sweetened drinks and candy.",
+      "state_url": "https://www.fns.usda.gov/snap/waivers/foodrestriction/texas",
       "notes": ""
     },
     {
@@ -139,8 +139,8 @@
       "duration_years": 2,
       "status": "implemented",
       "restrictions": ["soft_drinks", "energy_drinks", "candy"],
-      "restriction_text": "Soft drinks, energy drinks, candy",
-      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "restriction_text": "Restricts purchase of soft drinks, energy drinks, and candy.",
+      "state_url": "https://www.fns.usda.gov/snap/waivers/foodrestriction/louisiana",
       "notes": ""
     },
     {
@@ -152,8 +152,8 @@
       "duration_years": 2,
       "status": "approved",
       "restrictions": ["soda", "energy_drinks", "candy", "processed_foods"],
-      "restriction_text": "Processed foods/beverages including soda, energy drinks, candy",
-      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "restriction_text": "Restricts purchase of processed foods and beverages such as soda, energy drinks, and candy.",
+      "state_url": "https://www.fns.usda.gov/snap/waivers/foodrestriction/tennessee",
       "notes": "Revised 09/29/25"
     },
     {
@@ -165,8 +165,8 @@
       "duration_years": 2,
       "status": "approved",
       "restrictions": ["candy", "energy_drinks", "soft_drinks", "sweetened_beverages"],
-      "restriction_text": "Candy, energy drinks, soft drinks, sweetened beverages",
-      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "restriction_text": "Restricts purchase of candy, energy drinks, soft drinks, and sweetened beverages.",
+      "state_url": "https://www.fns.usda.gov/snap/waivers/foodrestriction/south-carolina",
       "notes": ""
     },
     {
@@ -178,8 +178,8 @@
       "duration_years": 2,
       "status": "approved",
       "restrictions": ["candy", "prepared_desserts", "unhealthy_drinks"],
-      "restriction_text": "Candy, prepared desserts, certain unhealthy beverages",
-      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "restriction_text": "Restricts purchase of candy, prepared desserts, and certain unhealthy beverages.",
+      "state_url": "https://www.fns.usda.gov/snap/waivers/foodrestriction/missouri",
       "notes": "Revised 10/08/25"
     },
     {
@@ -191,8 +191,8 @@
       "duration_years": 2,
       "status": "approved",
       "restrictions": ["soft_drinks", "energy_drinks", "candy"],
-      "restriction_text": "Soft drinks, energy drinks, candy",
-      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "restriction_text": "Restricts purchase of soft drinks, energy drinks, and candy.",
+      "state_url": "https://www.fns.usda.gov/snap/waivers/foodrestriction/north-dakota",
       "notes": "Revised 11/03/25"
     },
     {
@@ -204,8 +204,8 @@
       "duration_years": 2,
       "status": "approved",
       "restrictions": ["soft_drinks"],
-      "restriction_text": "Soft drinks",
-      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "restriction_text": "Restricts purchase of soft drinks.",
+      "state_url": "https://www.fns.usda.gov/snap/waivers/foodrestriction/hawaii",
       "notes": ""
     },
     {
@@ -217,8 +217,8 @@
       "duration_years": 2,
       "status": "approved",
       "restrictions": ["sweetened_beverages"],
-      "restriction_text": "Sweetened beverages",
-      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "restriction_text": "Restricts purchase of 'sweetened beverages.'",
+      "state_url": "https://www.fns.usda.gov/snap/waivers/foodrestriction/virginia",
       "notes": ""
     },
     {
@@ -230,8 +230,8 @@
       "duration_years": 2,
       "status": "implemented",
       "restrictions": ["taxable_foods"],
-      "restriction_text": "All taxable food items (per Iowa Dept of Revenue)",
-      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "restriction_text": "Restricts all taxable food items as defined by the Iowa Department of Revenue except food producing plants and seeds for food producing plants.",
+      "state_url": "https://www.fns.usda.gov/snap/waivers/foodrestriction/iowa",
       "notes": "First application - unique tax-code approach"
     }
   ],
