@@ -84,8 +84,93 @@ function initTooltips() {
         });
 }
 
+// Initialize category stat hover handlers
+function initCategoryHovers() {
+    const statItems = d3.selectAll('.stat-item');
+
+    // Map stat items to their restriction categories
+    const categoryMap = {
+        0: ['soda', 'soft_drinks'],  // Soda/soft drinks
+        1: ['candy'],                 // Candy
+        2: ['energy_drinks'],         // Energy drinks
+        3: ['prepared_desserts']      // Prepared desserts
+    };
+
+    statItems.each(function(d, i) {
+        const item = d3.select(this);
+        const categories = categoryMap[i];
+
+        if (!categories) return;
+
+        item
+            .style('cursor', 'pointer')
+            .on('mouseenter', () => {
+                highlightStatesWithRestriction(categories);
+            })
+            .on('mouseleave', () => {
+                restoreStatesView();
+            });
+    });
+}
+
+// Highlight states that have specific restrictions
+function highlightStatesWithRestriction(categories) {
+    const data = window.mapUtils.waiverData();
+    if (!data) return;
+
+    // Get states that have any of the specified restrictions
+    const matchingStates = data.states.filter(state =>
+        state.restrictions.some(r => categories.includes(r))
+    );
+
+    const matchingAbbrs = matchingStates.map(s => s.abbr);
+
+    // Highlight matching states, fade others
+    d3.selectAll('.state').each(function(d) {
+        const state = d3.select(this);
+        const abbr = d.properties.abbr;
+
+        if (matchingAbbrs.includes(abbr)) {
+            // Highlight matching state
+            state
+                .transition()
+                .duration(300)
+                .style('opacity', 1)
+                .style('stroke', '#ff9800')
+                .style('stroke-width', '2px');
+        } else {
+            // Fade non-matching state
+            state
+                .transition()
+                .duration(300)
+                .style('opacity', 0.2);
+        }
+    });
+}
+
+// Restore normal view after hover
+function restoreStatesView() {
+    const waiverStates = window.mapUtils.getWaiverStates();
+    const nonWaiverStates = window.mapUtils.getNonWaiverStates();
+
+    // Restore waiver states
+    waiverStates
+        .transition()
+        .duration(300)
+        .style('opacity', 1)
+        .style('stroke', '#333')
+        .style('stroke-width', '0.5px');
+
+    // Restore non-waiver states to faded
+    nonWaiverStates
+        .transition()
+        .duration(300)
+        .style('opacity', 0.1);
+}
+
 // Export interaction functions
 window.interactions = {
     initInteractions,
-    initTooltips
+    initTooltips,
+    initCategoryHovers
 };

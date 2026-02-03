@@ -15,8 +15,11 @@ async function initScrollytelling() {
     // Initialize interactions
     window.interactions.initInteractions();
 
-    // Optional: Initialize tooltips
-    // window.interactions.initTooltips();
+    // Initialize tooltips
+    window.interactions.initTooltips();
+
+    // Initialize category hovers
+    window.interactions.initCategoryHovers();
 
     // Set up scrollama
     scroller = scrollama();

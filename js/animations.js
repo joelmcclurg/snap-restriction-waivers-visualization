@@ -82,6 +82,7 @@ function showWaiversByStatus() {
             stateElement
                 .classed('neutral requested faded', false)
                 .classed(statusClass, true)
+                .classed('clickable', true)
                 .transition()
                 .duration(500)
                 .style('opacity', 1)
