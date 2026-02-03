@@ -36,13 +36,19 @@ This project includes comprehensive documentation for different audiences and us
    - Responsive behavior details
    - Accessibility features
 
+4. **[CHANGELOG.md](CHANGELOG.md)**
+   - Version history and release notes
+   - Detailed list of changes by date
+   - Technical implementation details
+   - Follows Keep a Changelog format
+
 ---
 
 ## 🔧 Technical Documentation
 
 **For developers and implementers:**
 
-4. **[README.md](README.md)**
+5. **[README.md](README.md)**
    - Technical architecture
    - File structure explanation
    - Data structure details
@@ -56,7 +62,7 @@ This project includes comprehensive documentation for different audiences and us
 
 **Validate the implementation:**
 
-5. **[test-visualization.sh](test-visualization.sh)**
+6. **[test-visualization.sh](test-visualization.sh)**
    - Automated test suite
    - Validates server, files, data
    - Run with: `./test-visualization.sh`
@@ -67,8 +73,8 @@ This project includes comprehensive documentation for different audiences and us
 
 **The actual visualization:**
 
-6. **[index.html](index.html)** - Open in browser after starting server
-7. **[http://localhost:8000](http://localhost:8000)** - View after running server
+7. **[index.html](index.html)** - Open in browser after starting server
+8. **[http://localhost:8000](http://localhost:8000)** - View after running server
 
 ---
 
@@ -84,8 +90,12 @@ This project includes comprehensive documentation for different audiences and us
 → See section-by-section walkthrough with colors/interactions
 
 ### "I want to use this in my portfolio"
-→ Read [PROJECT-SUMMARY.md](PROJECT-SUMMARY.md)  
+→ Read [PROJECT-SUMMARY.md](PROJECT-SUMMARY.md)
 → See demo suggestions, screenshots, write-up template
+
+### "I want to see version history and changes"
+→ Read [CHANGELOG.md](CHANGELOG.md)
+→ See detailed list of updates and improvements
 
 ### "I want to deploy this to production"
 → Read [README.md](README.md) - "Running the Visualization" section  
@@ -107,11 +117,11 @@ This project includes comprehensive documentation for different audiences and us
 
 ## Documentation Statistics
 
-- **Total documentation pages:** 5
-- **Total documentation words:** ~8,500+
+- **Total documentation pages:** 6
+- **Total documentation words:** ~9,000+
 - **Quick start time:** 30 seconds
-- **Full read time:** ~25 minutes
-- **Code documentation ratio:** 1:5 (excellent coverage)
+- **Full read time:** ~30 minutes
+- **Code documentation ratio:** 1:5.5 (excellent coverage)
 
 ---
 
@@ -122,6 +132,7 @@ This project includes comprehensive documentation for different audiences and us
 - `QUICKSTART.md` - Fast setup guide
 - `PROJECT-SUMMARY.md` - Complete overview
 - `VISUALIZATION-GUIDE.md` - User walkthrough
+- `CHANGELOG.md` - Version history
 - `README.md` - Technical documentation
 
 ### Application Files
@@ -136,7 +147,7 @@ This project includes comprehensive documentation for different audiences and us
 ### Testing Files
 - `test-visualization.sh` - Automated tests
 
-**Total:** 12 files (5 docs + 7 app files)
+**Total:** 13 files (6 docs + 7 app files)
 
 ---
 
