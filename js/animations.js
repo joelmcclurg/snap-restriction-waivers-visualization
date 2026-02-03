@@ -178,6 +178,7 @@ function showTimelineVisualization() {
         .attr('class', 'timeline-labels');
 
     labels.append('span').text('Jan 2026');
+    labels.append('span').text('Jun 2026');
     labels.append('span').text('Oct 2026');
 
     timelineDiv.classed('hidden', false);
