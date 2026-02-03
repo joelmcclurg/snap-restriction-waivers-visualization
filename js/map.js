@@ -100,9 +100,10 @@ function getNonWaiverStates() {
 
 // Calculate color for implementation date gradient
 function getImplementationColor(dateString) {
-    const date = new Date(dateString);
-    const minDate = new Date('2026-01-01');
-    const maxDate = new Date('2026-10-01');
+    // Parse ISO 8601 dates as UTC to avoid timezone shifts
+    const date = new Date(dateString + 'T00:00:00Z');
+    const minDate = new Date('2026-01-01T00:00:00Z');
+    const maxDate = new Date('2026-10-01T00:00:00Z');
 
     // Calculate position between min and max (0 to 1)
     const range = maxDate - minDate;
@@ -117,8 +118,14 @@ function getImplementationColor(dateString) {
 
 // Format date for display
 function formatDate(dateString) {
-    const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    // Parse ISO 8601 date as UTC to avoid timezone shifts
+    const date = new Date(dateString + 'T00:00:00Z');
+    return date.toLocaleDateString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric',
+        timeZone: 'UTC'
+    });
 }
 
 // Export functions for use in other modules

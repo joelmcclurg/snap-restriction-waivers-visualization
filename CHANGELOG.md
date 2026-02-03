@@ -6,6 +6,46 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [1.1.4] - 2026-02-03
+
+### Fixed
+- Fixed state highlighting mismatch in category statistics hover interaction
+  - Updated categoryMap to include all semantic variants of restriction types
+  - Soda/soft drinks now includes: sweetened_drinks, sweetened_beverages, unhealthy_drinks, taxable_foods
+  - Previously, Texas, Missouri, Virginia, and Iowa were incorrectly fading when hovering "Soda/Soft Drinks" statistic
+  - All 18 states now correctly highlight when hovering "100% restrict soda/soft drinks"
+- Corrected candy statistics: 13 states (72%) → 11 states (61%)
+- Corrected energy drinks statistics: 9 states (50%) → 6 states (33%)
+- All category statistics now match the exact number of states that highlight on hover
+
+## [1.1.3] - 2026-02-03
+
+### Fixed
+- Updated implementation dates for 5 states to match official USDA target dates
+  - Colorado: 03/01/26 → 04/30/26
+  - Florida: 01/01/26 → 04/20/26
+  - Idaho: 01/01/26 → 02/15/26
+  - Louisiana: 01/15/26 → 02/18/26
+  - Oklahoma: 01/01/26 → 02/15/26
+- Updated status for 4 states from "implemented" to "approved" (future implementation dates)
+  - Florida, Idaho, Louisiana, Oklahoma
+- Re-verified all 18 state statuses to ensure correct color coding (blue=implemented, green=approved)
+- Source: https://www.fns.usda.gov/snap/waivers/foodrestriction (verified 02/03/26)
+
+### Added
+- Disclaimer note explaining that implementation dates are targets and may differ from USDA effective dates
+
+## [1.1.2] - 2026-02-03
+
+### Fixed
+- Fixed timezone parsing bug in date formatting causing implementation dates to display one day earlier
+  - All modal popup dates (application, approval, implementation) now display correctly
+  - Fixed: States with "2026-01-01" dates were showing as "Dec 31, 2025"
+  - Solution: Parse ISO 8601 dates as UTC to prevent timezone-related date shifts
+- Fixed implementation timeline color gradient to use timezone-safe date parsing
+- Fixed approval date sorting to use timezone-safe date parsing
+- Affects users in negative UTC offset timezones (Americas)
+
 ## [1.1.1] - 2026-02-02
 
 ### Fixed

@@ -90,7 +90,7 @@ function initCategoryHovers() {
 
     // Map stat items to their restriction categories
     const categoryMap = {
-        0: ['soda', 'soft_drinks'],  // Soda/soft drinks
+        0: ['soda', 'soft_drinks', 'sweetened_drinks', 'sweetened_beverages', 'unhealthy_drinks', 'taxable_foods'],  // Soda/soft drinks
         1: ['candy'],                 // Candy
         2: ['energy_drinks'],         // Energy drinks
         3: ['prepared_desserts']      // Prepared desserts
