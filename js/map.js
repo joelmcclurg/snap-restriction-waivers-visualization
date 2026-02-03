@@ -9,8 +9,8 @@ let path = null;
 // Load data and initialize map
 async function initMap() {
     try {
-        // Load waiver data
-        const response = await fetch('data/waivers.json');
+        // Load waiver data with cache busting
+        const response = await fetch(`data/waivers.json?v=${Date.now()}`);
         waiverData = await response.json();
 
         // Load US states TopoJSON from external source

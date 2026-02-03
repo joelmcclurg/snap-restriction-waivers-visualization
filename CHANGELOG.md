@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [1.1.5] - 2026-02-03
+
+### Fixed
+- Added cache-busting timestamp to waivers.json fetch to prevent stale data from browser/CDN caches
+  - Issue: After deploying v1.1.3 status corrections, browsers continued showing cached data
+  - 4 states (Idaho, Oklahoma, Louisiana, Florida) were incorrectly displaying as blue (implemented) instead of green (approved)
+  - Solution: Added `?v=${Date.now()}` query parameter to force fresh data fetch on every page load
+  - Ensures users always see current state status and implementation date data
+  - Location: js/map.js:13
+
 ## [1.1.4] - 2026-02-03
 
 ### Fixed
