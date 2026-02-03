@@ -128,7 +128,7 @@ function highlightStatesWithRestriction(categories) {
     // Highlight matching states, fade others
     d3.selectAll('.state').each(function(d) {
         const state = d3.select(this);
-        const abbr = d.properties.abbr;
+        const abbr = this.getAttribute('data-state');
 
         if (matchingAbbrs.includes(abbr)) {
             // Highlight matching state
