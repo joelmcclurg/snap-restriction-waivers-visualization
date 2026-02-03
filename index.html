@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNAP Restriction Waivers: A State-by-State View</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>SNAP Restriction Waivers</h1>
+        <p class="subtitle">How 18 states are changing what can be purchased with food assistance</p>
+    </header>
+
+    <main>
+        <!-- Fixed/sticky map container -->
+        <div id="map-container" class="sticky">
+            <svg id="us-map"></svg>
+            <div id="legend" class="legend hidden"></div>
+            <div id="timeline-viz" class="timeline-viz hidden"></div>
+        </div>
+
+        <!-- Scrollable content sections -->
+        <article id="scrolly">
+            <section class="step" data-step="intro">
+                <div class="content-box">
+                    <h2>How SNAP Has Always Worked</h2>
+                    <p>The Supplemental Nutrition Assistance Program (SNAP) has historically allowed participants to purchase any "food for human consumption" with their benefits.</p>
+                    <p>This broad definition has included everything from fresh produce to packaged snacks, with very few restrictions.</p>
+                </div>
+            </section>
+
+            <section class="step" data-step="waivers-introduced">
+                <div class="content-box">
+                    <h2>State Waiver Requests</h2>
+                    <p>Starting in April 2025, states began requesting waivers to restrict certain food items from SNAP purchases.</p>
+                    <p>Within 14 months, <strong>18 states</strong> received approval for 2-year demonstration projects limiting what SNAP benefits can buy.</p>
+                </div>
+            </section>
+
+            <section class="step" data-step="restrictions">
+                <div class="content-box">
+                    <h2>What's Being Restricted</h2>
+                    <p>Click on any state to see specific restrictions. While there are common themes, <strong>definitions vary significantly</strong> between states.</p>
+                    <div id="category-stats" class="category-stats">
+                        <div class="stat-item">
+                            <span class="stat-icon">🥤</span>
+                            <span class="stat-text"><strong>18 states</strong> (100%) restrict soda/soft drinks</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-icon">🍬</span>
+                            <span class="stat-text"><strong>13 states</strong> (72%) restrict candy</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-icon">⚡</span>
+                            <span class="stat-text"><strong>9 states</strong> (50%) restrict energy drinks</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-icon">🍰</span>
+                            <span class="stat-text"><strong>2 states</strong> (11%) restrict prepared desserts</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="step" data-step="implementation">
+                <div class="content-box">
+                    <h2>Implementation Timeline</h2>
+                    <p>Restrictions are taking effect on a rolling basis from <strong>January 2026 through October 2026</strong>.</p>
+                    <p>Most states implemented on January 1, 2026, while others are phasing in throughout the year.</p>
+                </div>
+            </section>
+
+            <section class="step final-section" data-step="conclusion">
+                <div class="content-box">
+                    <h2>The Impact</h2>
+                    <p>These 18 state waivers represent a significant shift in SNAP policy, affecting millions of participants across diverse geographic regions.</p>
+                    <p>Each state's approach to defining restricted items varies, reflecting different policy priorities and public health goals.</p>
+                    <div class="attribution">
+                        <p><strong>Data Source:</strong> USDA Food and Nutrition Service</p>
+                        <p><strong>Visualization:</strong> Created with Claude Code</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- State detail modal -->
+    <div id="state-modal" class="modal hidden">
+        <div class="modal-content">
+            <button class="close-button" aria-label="Close">&times;</button>
+            <h3 id="modal-state-name"></h3>
+            <div class="modal-body">
+                <div class="timeline-item">
+                    <strong>Applied:</strong> <span id="modal-applied"></span>
+                </div>
+                <div class="timeline-item">
+                    <strong>Approved:</strong> <span id="modal-approved"></span>
+                </div>
+                <div class="timeline-item">
+                    <strong>Implementation:</strong> <span id="modal-implemented"></span>
+                </div>
+                <div class="restriction-item">
+                    <strong>Restricted Items:</strong>
+                    <p id="modal-restrictions"></p>
+                </div>
+                <div class="notes-item" id="modal-notes-container">
+                    <strong>Notes:</strong>
+                    <p id="modal-notes"></p>
+                </div>
+            </div>
+            <a id="modal-link" href="#" target="_blank" class="state-link">View USDA Information →</a>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+    <script src="https://unpkg.com/intersection-observer@0.12.2/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama@3.2.0/build/scrollama.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/interactions.js"></script>
+    <script src="js/scroll-controller.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+{
+  "states": [
+    {
+      "name": "Nebraska",
+      "abbr": "NE",
+      "application_date": "2025-04-14",
+      "approval_date": "2025-05-19",
+      "implementation_date": "2026-01-01",
+      "duration_years": 2,
+      "status": "implemented",
+      "restrictions": ["soda", "soft_drinks", "energy_drinks"],
+      "restriction_text": "Soda, soft drinks, energy drinks",
+      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "notes": "First state approved"
+    },
+    {
+      "name": "Indiana",
+      "abbr": "IN",
+      "application_date": "2025-04-15",
+      "approval_date": "2025-05-22",
+      "implementation_date": "2026-01-01",
+      "duration_years": 2,
+      "status": "implemented",
+      "restrictions": ["soft_drinks", "candy"],
+      "restriction_text": "Soft drinks, candy",
+      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "notes": ""
+    },
+    {
+      "name": "Arkansas",
+      "abbr": "AR",
+      "application_date": "2025-04-15",
+      "approval_date": "2025-06-10",
+      "implementation_date": "2026-07-01",
+      "duration_years": 2,
+      "status": "approved",
+      "restrictions": ["soda", "candy", "unhealthy_drinks"],
+      "restriction_text": "Soda, low/no-cal soda, fruit/veg drinks <50% juice, unhealthy drinks, candy",
+      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "notes": "Comprehensive definition approach"
+    },
+    {
+      "name": "Idaho",
+      "abbr": "ID",
+      "application_date": "2025-05-16",
+      "approval_date": "2025-06-10",
+      "implementation_date": "2026-01-01",
+      "duration_years": 2,
+      "status": "implemented",
+      "restrictions": ["soda", "candy"],
+      "restriction_text": "Soda, candy",
+      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "notes": ""
+    },
+    {
+      "name": "Utah",
+      "abbr": "UT",
+      "application_date": "2025-05-16",
+      "approval_date": "2025-06-15",
+      "implementation_date": "2026-01-01",
+      "duration_years": 2,
+      "status": "implemented",
+      "restrictions": ["soft_drinks"],
+      "restriction_text": "Soft drinks",
+      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "notes": ""
+    },
+    {
+      "name": "Colorado",
+      "abbr": "CO",
+      "application_date": "2025-05-13",
+      "approval_date": "2025-08-04",
+      "implementation_date": "2026-03-01",
+      "duration_years": 2,
+      "status": "implemented",
+      "restrictions": ["soft_drinks"],
+      "restriction_text": "Soft drinks",
+      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "notes": ""
+    },
+    {
+      "name": "Florida",
+      "abbr": "FL",
+      "application_date": "2025-05-29",
+      "approval_date": "2025-08-04",
+      "implementation_date": "2026-01-01",
+      "duration_years": 2,
+      "status": "implemented",
+      "restrictions": ["soda", "energy_drinks", "candy", "prepared_desserts"],
+      "restriction_text": "Soda, energy drinks, candy, prepared desserts",
+      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "notes": ""
+    },
+    {
+      "name": "Oklahoma",
+      "abbr": "OK",
+      "application_date": "2025-06-10",
+      "approval_date": "2025-08-04",
+      "implementation_date": "2026-01-01",
+      "duration_years": 2,
+      "status": "implemented",
+      "restrictions": ["soft_drinks", "candy"],
+      "restriction_text": "Soft drinks, candy",
+      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "notes": ""
+    },
+    {
+      "name": "West Virginia",
+      "abbr": "WV",
+      "application_date": "2025-06-10",
+      "approval_date": "2025-08-04",
+      "implementation_date": "2026-01-01",
+      "duration_years": 2,
+      "status": "implemented",
+      "restrictions": ["soda"],
+      "restriction_text": "Soda",
+      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "notes": ""
+    },
+    {
+      "name": "Texas",
+      "abbr": "TX",
+      "application_date": "2025-06-26",
+      "approval_date": "2025-08-04",
+      "implementation_date": "2026-04-01",
+      "duration_years": 2,
+      "status": "approved",
+      "restrictions": ["sweetened_drinks", "candy"],
+      "restriction_text": "Sweetened drinks, candy",
+      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "notes": ""
+    },
+    {
+      "name": "Louisiana",
+      "abbr": "LA",
+      "application_date": "2025-06-27",
+      "approval_date": "2025-08-04",
+      "implementation_date": "2026-01-15",
+      "duration_years": 2,
+      "status": "implemented",
+      "restrictions": ["soft_drinks", "energy_drinks", "candy"],
+      "restriction_text": "Soft drinks, energy drinks, candy",
+      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "notes": ""
+    },
+    {
+      "name": "Tennessee",
+      "abbr": "TN",
+      "application_date": "2025-08-13",
+      "approval_date": "2025-12-10",
+      "implementation_date": "2026-07-31",
+      "duration_years": 2,
+      "status": "approved",
+      "restrictions": ["soda", "energy_drinks", "candy", "processed_foods"],
+      "restriction_text": "Processed foods/beverages including soda, energy drinks, candy",
+      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "notes": "Revised 09/29/25"
+    },
+    {
+      "name": "South Carolina",
+      "abbr": "SC",
+      "application_date": "2025-09-23",
+      "approval_date": "2025-12-10",
+      "implementation_date": "2026-08-31",
+      "duration_years": 2,
+      "status": "approved",
+      "restrictions": ["candy", "energy_drinks", "soft_drinks", "sweetened_beverages"],
+      "restriction_text": "Candy, energy drinks, soft drinks, sweetened beverages",
+      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "notes": ""
+    },
+    {
+      "name": "Missouri",
+      "abbr": "MO",
+      "application_date": "2025-09-29",
+      "approval_date": "2025-12-10",
+      "implementation_date": "2026-10-01",
+      "duration_years": 2,
+      "status": "approved",
+      "restrictions": ["candy", "prepared_desserts", "unhealthy_drinks"],
+      "restriction_text": "Candy, prepared desserts, certain unhealthy beverages",
+      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "notes": "Revised 10/08/25"
+    },
+    {
+      "name": "North Dakota",
+      "abbr": "ND",
+      "application_date": "2025-10-24",
+      "approval_date": "2025-12-10",
+      "implementation_date": "2026-09-01",
+      "duration_years": 2,
+      "status": "approved",
+      "restrictions": ["soft_drinks", "energy_drinks", "candy"],
+      "restriction_text": "Soft drinks, energy drinks, candy",
+      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "notes": "Revised 11/03/25"
+    },
+    {
+      "name": "Hawaii",
+      "abbr": "HI",
+      "application_date": "2025-10-10",
+      "approval_date": "2025-12-10",
+      "implementation_date": "2026-08-01",
+      "duration_years": 2,
+      "status": "approved",
+      "restrictions": ["soft_drinks"],
+      "restriction_text": "Soft drinks",
+      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "notes": ""
+    },
+    {
+      "name": "Virginia",
+      "abbr": "VA",
+      "application_date": "2025-11-04",
+      "approval_date": "2025-12-10",
+      "implementation_date": "2026-04-01",
+      "duration_years": 2,
+      "status": "approved",
+      "restrictions": ["sweetened_beverages"],
+      "restriction_text": "Sweetened beverages",
+      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "notes": ""
+    },
+    {
+      "name": "Iowa",
+      "abbr": "IA",
+      "application_date": "2025-04-01",
+      "approval_date": "2025-06-01",
+      "implementation_date": "2026-01-01",
+      "duration_years": 2,
+      "status": "implemented",
+      "restrictions": ["taxable_foods"],
+      "restriction_text": "All taxable food items (per Iowa Dept of Revenue)",
+      "state_url": "https://www.fns.usda.gov/snap/supplemental-nutrition-assistance-program",
+      "notes": "First application - unique tax-code approach"
+    }
+  ],
+  "categories": {
+    "soda": {
+      "label": "Soda/Soft Drinks",
+      "count": 18,
+      "icon": "🥤"
+    },
+    "candy": {
+      "label": "Candy",
+      "count": 13,
+      "icon": "🍬"
+    },
+    "energy_drinks": {
+      "label": "Energy Drinks",
+      "count": 9,
+      "icon": "⚡"
+    },
+    "prepared_desserts": {
+      "label": "Prepared Desserts",
+      "count": 2,
+      "icon": "🍰"
+    }
+  }
+}
