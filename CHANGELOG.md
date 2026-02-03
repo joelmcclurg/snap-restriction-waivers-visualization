@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [1.1.1] - 2026-02-02
+
+### Fixed
+- Corrected Colorado's status from "implemented" to "approved"
+  - Implementation date is March 1, 2026 (future date)
+  - Status field now accurately reflects waiver is approved but not yet in effect
+  - Fixes incorrect blue (implemented) coloring, now correctly shows green (approved)
+- Ensures visualization accurately represents state of waivers as of February 2, 2026
+
 ## [1.1.0] - 2026-02-02
 
 ### Changed

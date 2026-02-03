@@ -72,7 +72,7 @@
       "approval_date": "2025-08-04",
       "implementation_date": "2026-03-01",
       "duration_years": 2,
-      "status": "implemented",
+      "status": "approved",
       "restrictions": ["soft_drinks"],
       "restriction_text": "Restricts purchase of soft drinks.",
       "state_url": "https://www.fns.usda.gov/snap/waivers/foodrestriction/colorado",
