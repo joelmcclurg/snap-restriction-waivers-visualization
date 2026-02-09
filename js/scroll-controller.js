@@ -5,8 +5,8 @@ let scroller = null;
 // Get responsive Scrollama offset based on viewport width
 function getScrollamaOffset() {
     const width = window.innerWidth;
-    if (width <= 640) return 0.7;
-    if (width <= 1024) return 0.65;
+    if (width <= 640) return 0.3;
+    if (width <= 1024) return 0.35;
     return 0.5;
 }
 
