@@ -2,6 +2,14 @@
 
 let scroller = null;
 
+// Get responsive Scrollama offset based on viewport width
+function getScrollamaOffset() {
+    const width = window.innerWidth;
+    if (width <= 640) return 0.7;
+    if (width <= 1024) return 0.65;
+    return 0.5;
+}
+
 // Initialize scrollytelling
 async function initScrollytelling() {
     // Wait for map to initialize
@@ -27,24 +35,19 @@ async function initScrollytelling() {
     scroller
         .setup({
             step: '.step',
-            offset: 0.5, // Trigger when step is 50% from top of viewport
-            debug: false // Set to true to see trigger lines during development
+            offset: getScrollamaOffset(),
+            debug: false
         })
         .onStepEnter(handleStepEnter)
         .onStepExit(handleStepExit);
 
     // Handle resize
     window.addEventListener('resize', handleResize);
-
-    console.log('Scrollytelling initialized');
 }
 
 // Handle step enter
 function handleStepEnter(response) {
-    const { element, direction, index } = response;
-    const step = element.dataset.step;
-
-    console.log('Entering step:', step, 'direction:', direction, 'index:', index);
+    const step = response.element.dataset.step;
 
     // Trigger appropriate animation based on step
     switch (step) {
@@ -63,27 +66,28 @@ function handleStepEnter(response) {
         case 'conclusion':
             window.animations.showConclusion();
             break;
-        default:
-            console.log('Unknown step:', step);
     }
 }
 
 // Handle step exit
 function handleStepExit(response) {
-    const { element, direction, index } = response;
-    const step = element.dataset.step;
-
-    console.log('Exiting step:', step, 'direction:', direction, 'index:', index);
-
-    // Optional: Handle exit animations if needed
-    // For now, we let the next step's enter animation handle the transition
+    // Let the next step's enter animation handle the transition
 }
 
-// Handle window resize
+// Handle window resize (debounced)
+let resizeTimer;
 function handleResize() {
-    if (scroller) {
-        scroller.resize();
-    }
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+        if (scroller) {
+            scroller.resize();
+            scroller.setup({
+                step: '.step',
+                offset: getScrollamaOffset(),
+                debug: false
+            });
+        }
+    }, 150);
 }
 
 // Initialize when DOM is ready

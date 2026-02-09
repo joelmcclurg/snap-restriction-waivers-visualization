@@ -76,8 +76,10 @@ function initTooltips() {
             tooltip
                 .style('left', (event.pageX + 10) + 'px')
                 .style('top', (event.pageY - 10) + 'px')
-                .html(`<strong>${waiverData.name}</strong>`)
-                .classed('visible', true);
+                .html('')
+                .append('strong')
+                .text(waiverData.name);
+            tooltip.classed('visible', true);
         })
         .on('mouseout', () => {
             tooltip.classed('visible', false);
@@ -153,13 +155,13 @@ function restoreStatesView() {
     const waiverStates = window.mapUtils.getWaiverStates();
     const nonWaiverStates = window.mapUtils.getNonWaiverStates();
 
-    // Restore waiver states
+    // Restore waiver states (let CSS defaults take over)
     waiverStates
         .transition()
         .duration(300)
         .style('opacity', 1)
-        .style('stroke', '#333')
-        .style('stroke-width', '0.5px');
+        .style('stroke', null)
+        .style('stroke-width', null);
 
     // Restore non-waiver states to faded
     nonWaiverStates

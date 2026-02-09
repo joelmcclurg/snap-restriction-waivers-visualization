@@ -62,7 +62,7 @@ function showWaiversByStatus() {
         .style('fill', '#e0e0e0');
 
     // Sort waiver states by approval date for sequential animation
-    const sortedStates = data.states.sort((a, b) =>
+    const sortedStates = [...data.states].sort((a, b) =>
         new Date(a.approval_date + 'T00:00:00Z') - new Date(b.approval_date + 'T00:00:00Z')
     );
 

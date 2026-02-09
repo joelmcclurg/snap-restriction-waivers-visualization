@@ -234,27 +234,5 @@
       "state_url": "https://www.fns.usda.gov/snap/waivers/foodrestriction/iowa",
       "notes": "First application - unique tax-code approach"
     }
-  ],
-  "categories": {
-    "soda": {
-      "label": "Soda/Soft Drinks",
-      "count": 18,
-      "icon": "🥤"
-    },
-    "candy": {
-      "label": "Candy",
-      "count": 11,
-      "icon": "🍬"
-    },
-    "energy_drinks": {
-      "label": "Energy Drinks",
-      "count": 6,
-      "icon": "⚡"
-    },
-    "prepared_desserts": {
-      "label": "Prepared Desserts",
-      "count": 2,
-      "icon": "🍰"
-    }
-  }
+  ]
 }

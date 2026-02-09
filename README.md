@@ -25,8 +25,8 @@ All data compiled from official USDA Food and Nutrition Service (FNS) announceme
 - **Implementation dates**: January 2026 - October 2026
 - **Common restrictions**:
   - 100% of states restrict soda/soft drinks
-  - 72% restrict candy
-  - 50% restrict energy drinks
+  - 61% restrict candy
+  - 33% restrict energy drinks
   - 11% restrict prepared desserts
 
 ## Technical Architecture
@@ -159,6 +159,23 @@ Tested and working on:
 - Sufficient color contrast (WCAG AA compliant)
 - Responsive text sizing
 
+## Live URL
+
+**Live at:** [https://joelmcclurg.github.io/snap-restriction-waivers-visualization/](https://joelmcclurg.github.io/snap-restriction-waivers-visualization/)
+
+## Published Writing
+
+- **Substack**: [SNAP Visualizations Case Study](https://joelmcclurg.substack.com/) *(paste final URL)*
+- **LinkedIn**: [SNAP Visualizations Post](https://linkedin.com/) *(paste final URL)*
+
+Both posts cover this project alongside the companion HR1 Work Requirements Explainer as a paired case study.
+
+## Companion Project
+
+- **HR1 Work Requirements Explainer**: [https://joelmcclurg-personal.github.io/hr1-snap-work-requirements/](https://joelmcclurg-personal.github.io/hr1-snap-work-requirements/)
+
+An interactive visual explainer showing how SNAP work requirements changed under H.R. 1. The Substack post covers both projects together as a case study in data visualization for public policy.
+
 ## Future Enhancements
 
 Possible additions for future versions:
@@ -187,5 +204,5 @@ For questions about the data or visualization:
 
 ---
 
-**Last Updated**: February 2, 2026
+**Last Updated**: February 6, 2026
 **Version**: 1.1

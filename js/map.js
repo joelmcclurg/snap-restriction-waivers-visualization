@@ -9,8 +9,11 @@ let path = null;
 // Load data and initialize map
 async function initMap() {
     try {
-        // Load waiver data with cache busting
-        const response = await fetch(`data/waivers.json?v=${Date.now()}`);
+        // Load waiver data
+        const response = await fetch('data/waivers.json');
+        if (!response.ok) {
+            throw new Error(`Failed to load waivers.json: ${response.status}`);
+        }
         waiverData = await response.json();
 
         // Load US states TopoJSON from external source
@@ -75,7 +78,6 @@ async function initMap() {
                 }
             });
 
-        console.log('Map initialized successfully');
         return true;
     } catch (error) {
         console.error('Error initializing map:', error);
