@@ -1,6 +1,7 @@
 // Scrollama setup and scroll event handling
 
 let scroller = null;
+let lastActiveStep = null;
 
 // Get responsive Scrollama offset based on viewport width
 function getScrollamaOffset() {
@@ -30,19 +31,62 @@ async function initScrollytelling() {
     window.interactions.initCategoryHovers();
 
     // Set up scrollama
-    scroller = scrollama();
+    try {
+        scroller = scrollama();
 
-    scroller
-        .setup({
-            step: '.step',
-            offset: getScrollamaOffset(),
-            debug: false
-        })
-        .onStepEnter(handleStepEnter)
-        .onStepExit(handleStepExit);
+        scroller
+            .setup({
+                step: '.step',
+                offset: getScrollamaOffset(),
+                debug: false
+            })
+            .onStepEnter(handleStepEnter)
+            .onStepExit(handleStepExit);
+    } catch (e) {
+        console.warn('Scrollama failed to initialize:', e);
+    }
+
+    // Always add native scroll fallback for reliability on mobile
+    initScrollFallback();
 
     // Handle resize
     window.addEventListener('resize', handleResize);
+}
+
+// Native scroll listener fallback — catches cases where Scrollama's
+// IntersectionObserver doesn't fire (common on mobile with sticky elements)
+function initScrollFallback() {
+    window.addEventListener('scroll', function() {
+        const steps = document.querySelectorAll('.step');
+        const viewportHeight = window.innerHeight;
+        // Trigger line: 65% down the viewport (matches Scrollama offset intent)
+        const triggerY = viewportHeight * 0.65;
+
+        let activeStep = null;
+
+        for (const step of steps) {
+            const rect = step.getBoundingClientRect();
+            // A step is "active" when its top has scrolled above the trigger line
+            // and its bottom is still below the trigger line
+            if (rect.top <= triggerY && rect.bottom > triggerY) {
+                activeStep = step;
+                break;
+            }
+        }
+
+        // Also catch case where we've scrolled past all steps (last step active)
+        if (!activeStep) {
+            const lastStep = steps[steps.length - 1];
+            if (lastStep && lastStep.getBoundingClientRect().bottom <= triggerY) {
+                activeStep = lastStep;
+            }
+        }
+
+        if (activeStep && activeStep !== lastActiveStep) {
+            lastActiveStep = activeStep;
+            handleStepEnter({ element: activeStep });
+        }
+    }, { passive: true });
 }
 
 // Handle step enter
@@ -81,12 +125,9 @@ function handleResize() {
     resizeTimer = setTimeout(() => {
         if (scroller) {
             scroller.resize();
-            scroller.setup({
-                step: '.step',
-                offset: getScrollamaOffset(),
-                debug: false
-            });
         }
+        // Reset fallback so next scroll re-evaluates
+        lastActiveStep = null;
     }, 150);
 }
 
